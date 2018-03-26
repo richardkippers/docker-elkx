@@ -3,6 +3,7 @@ RUN apt-get install nano
 
 # Add kibana.yml 
 COPY kibana.yml /opt/kibana/config/kibana.yml
+COPY elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 
 # Elastic plugins
 ENV ES_HOME /opt/elasticsearch
