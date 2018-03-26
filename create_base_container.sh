@@ -1,0 +1,1 @@
+sudo docker build --file Dockerfile_base --tag richardkippers/elkx_base .
