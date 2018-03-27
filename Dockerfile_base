@@ -1,7 +1,7 @@
 FROM sebp/elk:621
 RUN apt-get install nano
 
-# Add kibana.yml 
+# Add kibana.yml and elastic.yml 
 COPY kibana.yml /opt/kibana/config/kibana.yml
 COPY elasticsearch.yml /etc/elasticsearch/elasticsearch.yml
 
