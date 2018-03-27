@@ -2,7 +2,7 @@
 
 For a project @  Fontys Hogeschool. I have seperated a Dockerfile witch installs ELK/X-Pack and a 'custom' docker file so ELK and X-Pack does not have to be installed over and over.
 
-*Base image: sebp/elk:621*
+*Base image: sebp/elk:622*
 
 Change `elasticsearch.password` in `kibana.yml` to you own password
 

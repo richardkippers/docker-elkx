@@ -101,3 +101,4 @@ elasticsearch.password: "changeme"
 #ops.interval: 5000
 
 vega.enableExternalUrls: true
+transform_vis.allow_unsafe: true

@@ -1,4 +1,4 @@
-FROM sebp/elk:621
+FROM sebp/elk:622
 RUN apt-get install nano
 
 # Add kibana.yml and elastic.yml 
@@ -13,5 +13,6 @@ RUN CONF_DIR=/etc/elasticsearch gosu elasticsearch bin/elasticsearch-plugin \
 
 # Kibana plugins
 WORKDIR ${KIBANA_HOME}
-RUN gosu kibana bin/kibana-plugin install https://github.com/raystorm-place/kibana-html-plugin/releases/download/v6.2.1/kibana-html-plugin-6.2.1.zip
+#RUN gosu kibana bin/kibana-plugin install https://github.com/raystorm-place/kibana-html-plugin/releases/download/v6.2.1/kibana-html-plugin-6.2.1.zip
 RUN gosu kibana bin/kibana-plugin install x-pack
+RUN gosu kibana bin/kibana-plugin install https://github.com/PhaedrusTheGreek/transform_vis/releases/download/6.2.2/transform_vis-6.2.2.zip
